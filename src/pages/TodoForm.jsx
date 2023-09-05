@@ -2,6 +2,7 @@ import { useState } from "react";
 import categories from "../mock/todoCategory";
 
 export default function TodoForm() {
+    // TODO: Validate and submit using Form Hooks package
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
     return (
