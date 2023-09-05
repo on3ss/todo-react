@@ -1,5 +1,4 @@
 export default function TodoCard({ todo }) {
-    console.log()
     return (
         <li>
             <div className="px-2 py-4 my-4 bg-yellow-100 rounded-xl">
