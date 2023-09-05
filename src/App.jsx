@@ -1,9 +1,10 @@
-import NavBar from "./components/navbar"
+import NavBar from "./components/NavBar"
+import TodoList from "./components/TodoList"
 
 function App() {
 
   return (
-    <>
+    <div>
       <header className="px-4 py-6">
         <div className="flex justify-between align-middle">
           <div className="text-3xl">Todo</div>
@@ -12,9 +13,9 @@ function App() {
       </header>
       <NavBar />
       <main className="px-4">
-        Main
+        <TodoList />
       </main>
-    </>
+    </div>
   )
 }
 
