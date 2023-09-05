@@ -29,6 +29,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@faker-js/faker", "npm:8.0.2"],\
+            ["@tailwindcss/line-clamp", "virtual:595e5927fb9b96c417a7b46250b6551204818bb4c7a40abf7086374961c7f7a301e0546b7a0e53935dcf730518f97d4a6feda0fd90473ea198c9b79540211e23#npm:0.4.4"],\
             ["@types/react", "npm:18.2.21"],\
             ["@types/react-dom", "npm:18.2.7"],\
             ["@vitejs/plugin-react", "virtual:595e5927fb9b96c417a7b46250b6551204818bb4c7a40abf7086374961c7f7a301e0546b7a0e53935dcf730518f97d4a6feda0fd90473ea198c9b79540211e23#npm:4.0.4"],\
@@ -808,6 +809,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@pkgjs-parseargs-npm-0.11.0-cd2a3fe948-6ad6a00fc4.zip/node_modules/@pkgjs/parseargs/",\
           "packageDependencies": [\
             ["@pkgjs/parseargs", "npm:0.11.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@tailwindcss/line-clamp", [\
+        ["npm:0.4.4", {\
+          "packageLocation": "./.yarn/cache/@tailwindcss-line-clamp-npm-0.4.4-23cb911440-3d2ad992aa.zip/node_modules/@tailwindcss/line-clamp/",\
+          "packageDependencies": [\
+            ["@tailwindcss/line-clamp", "npm:0.4.4"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:595e5927fb9b96c417a7b46250b6551204818bb4c7a40abf7086374961c7f7a301e0546b7a0e53935dcf730518f97d4a6feda0fd90473ea198c9b79540211e23#npm:0.4.4", {\
+          "packageLocation": "./.yarn/__virtual__/@tailwindcss-line-clamp-virtual-f390b971f8/0/cache/@tailwindcss-line-clamp-npm-0.4.4-23cb911440-3d2ad992aa.zip/node_modules/@tailwindcss/line-clamp/",\
+          "packageDependencies": [\
+            ["@tailwindcss/line-clamp", "virtual:595e5927fb9b96c417a7b46250b6551204818bb4c7a40abf7086374961c7f7a301e0546b7a0e53935dcf730518f97d4a6feda0fd90473ea198c9b79540211e23#npm:0.4.4"],\
+            ["@types/tailwindcss", null],\
+            ["tailwindcss", "npm:3.3.3"]\
+          ],\
+          "packagePeers": [\
+            "@types/tailwindcss",\
+            "tailwindcss"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4410,6 +4433,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["todo-react", "workspace:."],\
             ["@faker-js/faker", "npm:8.0.2"],\
+            ["@tailwindcss/line-clamp", "virtual:595e5927fb9b96c417a7b46250b6551204818bb4c7a40abf7086374961c7f7a301e0546b7a0e53935dcf730518f97d4a6feda0fd90473ea198c9b79540211e23#npm:0.4.4"],\
             ["@types/react", "npm:18.2.21"],\
             ["@types/react-dom", "npm:18.2.7"],\
             ["@vitejs/plugin-react", "virtual:595e5927fb9b96c417a7b46250b6551204818bb4c7a40abf7086374961c7f7a301e0546b7a0e53935dcf730518f97d4a6feda0fd90473ea198c9b79540211e23#npm:4.0.4"],\
