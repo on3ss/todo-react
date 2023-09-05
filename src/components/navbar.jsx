@@ -1,21 +1,17 @@
 const links = [
     {
-        id: 1,
         label: 'work',
         color: 'bg-purple-300'
     },
     {
-        id: 1,
         label: 'study',
         color: 'bg-violet-300'
     },
     {
-        id: 1,
         label: 'entertainment',
         color: 'bg-red-300'
     },
     {
-        id: 1,
         label: 'family',
         color: 'bg-green-300'
     },
