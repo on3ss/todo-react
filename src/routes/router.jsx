@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "./root";
 import ErrorPage from "../error-page";
 import TodoList from "../pages/TodoList";
-import TodoForm from "./form";
+import TodoForm from "../pages/TodoForm";
 
 const router = createBrowserRouter([
     {

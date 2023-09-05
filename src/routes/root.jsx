@@ -1,5 +1,4 @@
 import { Link, Outlet } from "react-router-dom";
-import NavBar from "../components/NavBar";
 
 export default function Root() {
     return (
@@ -10,7 +9,6 @@ export default function Root() {
                     <Link className="text-3xl focus:outline-none" to="/form">+</Link>
                 </div>
             </header>
-            <NavBar />
             <main className="px-4">
                 <Outlet />
             </main>
