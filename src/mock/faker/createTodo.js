@@ -1,4 +1,5 @@
 import { faker } from '@faker-js/faker';
+import categories from '../todoCategory'
 
 export default function createTodo() {
     return {
@@ -7,7 +8,7 @@ export default function createTodo() {
             max: 4
         }),
         description: faker.lorem.paragraph(),
-        tags: faker.helpers.arrayElements([0, 1, 2, 3]),
+        categories: faker.helpers.arrayElements(categories),
         isDone: faker.datatype.boolean()
     }
 }

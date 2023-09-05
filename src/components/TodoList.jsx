@@ -1,4 +1,4 @@
-import createTodo from "../utils/faker/createTodo"
+import createTodo from "../mock/faker/createTodo"
 import TodoCard from "./TodoCard"
 
 const todos = Array.from({ length: 20 }, createTodo)

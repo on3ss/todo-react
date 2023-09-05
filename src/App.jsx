@@ -7,7 +7,7 @@ function App() {
     <div>
       <header className="px-4 py-6">
         <div className="flex justify-between align-middle">
-          <div className="text-3xl">Todo</div>
+          <h1 className="text-3xl">Todo</h1>
           <button className="text-3xl focus:outline-none">+</button>
         </div>
       </header>
