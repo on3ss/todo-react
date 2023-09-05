@@ -1,5 +1,5 @@
 import createTodo from "../mock/faker/createTodo"
-import TodoCard from "./TodoCard"
+import TodoCard from "../components/TodoCard"
 
 const todos = Array.from({ length: 20 }, createTodo)
 
