@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react"
 import categories from "../data/todoCategory"
+import { useDispatch } from "react-redux"
+import { toggleDone } from "../store/slice/todoSlice"
 
 export default function TodoCard({ todo }) {
     const [isDone, setIsDone] = useState(false)
+    const dispatch = useDispatch()
 
     useEffect(() => {
         setIsDone(todo.isDone)
@@ -10,6 +13,7 @@ export default function TodoCard({ todo }) {
 
     const toggleIsDone = () => {
         setIsDone(!isDone)
+        dispatch(toggleDone({ id: todo.id }))
     }
 
     return (

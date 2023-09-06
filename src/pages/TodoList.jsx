@@ -13,9 +13,14 @@ export default function TodoList() {
             <div className="mt-4">
                 <ul>
                     {
-                        todos.map((todo, key) => {
-                            return (<TodoCard key={key} todo={todo} />)
-                        })
+                        todos.length > 0
+                            ? todos.map((todo, key) => {
+                                return (<TodoCard key={key} todo={todo} />)
+                            }) : (
+                                <div className="flex justify-center">
+                                    <h5>No todos yet!</h5>
+                                </div>
+                            )
                     }
                 </ul>
             </div>

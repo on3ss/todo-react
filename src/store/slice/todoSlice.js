@@ -28,6 +28,7 @@ export const todoSlice = createSlice({
                 if (item.id === action.payload.id) {
                     item.isDone = !item.isDone
                 }
+                return item
             })
         }
     }
