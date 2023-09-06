@@ -21,7 +21,7 @@ export default function TodoForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        dispatch(addTodo({ title, description, categories }))
+        dispatch(addTodo({ title, description, categories, isDone: false }))
         return navigate('/')
     }
 

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import categories from "../mock/todoCategory"
 
 export default function TodoCard({ todo }) {
     const [isDone, setIsDone] = useState(false)
@@ -21,8 +22,9 @@ export default function TodoCard({ todo }) {
                     <div className="flex justify-start gap-2 my-2">
                         {
                             todo.categories.map((category, key) => {
+                                const color = categories[parseInt(category)].color
                                 return (
-                                    <div key={key} className={"w-6 h-6 rounded-full " + category.color}></div>
+                                    <div key={key} className={"w-6 h-6 rounded-full " + color}></div>
                                 )
                             })
                         }

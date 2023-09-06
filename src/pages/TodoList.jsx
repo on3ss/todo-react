@@ -1,10 +1,12 @@
-import createTodo from "../mock/faker/createTodo"
 import TodoCard from "../components/TodoCard"
 import CategoriesFilter from '../components/NavBar'
+import { useSelector } from "react-redux"
 
-const todos = Array.from({ length: 20 }, createTodo)
 
 export default function TodoList() {
+
+    const todos = useSelector((state) => state.todo.todos)
+
     return (
         <>
             <CategoriesFilter />
