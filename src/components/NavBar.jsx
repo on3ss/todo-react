@@ -1,4 +1,4 @@
-import categories from '../mock/todoCategory'
+import categories from '../data/todoCategory'
 
 export default function NavBar() {
     return (

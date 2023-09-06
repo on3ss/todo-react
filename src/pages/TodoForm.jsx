@@ -1,5 +1,5 @@
 import { useState } from "react";
-import defaultCategories from "../mock/todoCategory";
+import defaultCategories from "../data/todoCategory";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../store/slice/todoSlice";
 import { useNavigate } from "react-router-dom";

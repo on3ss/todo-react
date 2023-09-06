@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import categories from "../mock/todoCategory"
+import categories from "../data/todoCategory"
 
 export default function TodoCard({ todo }) {
     const [isDone, setIsDone] = useState(false)
