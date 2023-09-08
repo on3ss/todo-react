@@ -19,8 +19,8 @@ export default function TodoCard({ todo }) {
     return (
         <li>
             <div className="p-4 my-4 bg-yellow-100 rounded-xl">
-                <h4 className="text-xl text-gray-800 line-clamp-2">{todo.title}</h4>
-                <p className="mt-2 text-gray-600 line-clamp-2">{todo.description}</p>
+                <h4 className={isDone ? "text-xl text-gray-800 line-clamp-2 line-through" : "text-xl text-gray-800 line-clamp-2"}>{todo.title}</h4>
+                <p className={isDone ? "mt-2 text-gray-600 line-clamp-2 line-through" : "mt-2 text-gray-600 line-clamp-2"}>{todo.description}</p>
 
                 <div className="flex items-center justify-between">
                     <div className="flex justify-start gap-2 my-2">
