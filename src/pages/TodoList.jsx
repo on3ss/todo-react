@@ -26,7 +26,7 @@ export default function TodoList() {
 
         setFilteredTodos(filtered)
 
-    },)
+    }, [filter, hideDone, todos])
 
     return (
         <>
