@@ -13,20 +13,20 @@ export default function TodoList() {
 
 
     useEffect(() => {
-        let filteredTodos = []
+        let filtered = []
         if ((filter == VIEW_ALL_FILTER_VALUE)) {
-            filteredTodos = todos
+            filtered = todos
         } else {
-            filteredTodos = todos.filter((item) => item.categories.includes(filter))
+            filtered = todos.filter((item) => item.categories.includes(filter))
         }
 
         if (hideDone) {
-            filteredTodos = filteredTodos.filter((item) => !item.isDone)
+            filtered = filtered.filter((item) => !item.isDone)
         }
 
-        setFilteredTodos(filteredTodos)
+        setFilteredTodos(filtered)
 
-    }, [filter, hideDone])
+    },)
 
     return (
         <>
@@ -62,7 +62,7 @@ export default function TodoList() {
             <div className="px-4 mt-4">
                 <ul>
                     {
-                        filteredTodos.length > 0
+                        filteredTodos && filteredTodos.length > 0
                             ? filteredTodos.map((todo, key) => {
                                 return (<TodoCard key={key} todo={todo} />)
                             }) : (
