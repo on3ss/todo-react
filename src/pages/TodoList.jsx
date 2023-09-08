@@ -9,15 +9,24 @@ export default function TodoList() {
     const todos = useSelector((state) => state.todo.todos)
     const [filter, setFilter] = useState(VIEW_ALL_FILTER_VALUE)
     const [filteredTodos, setFilteredTodos] = useState([])
+    const [hideDone, setHideDone] = useState(false)
 
 
     useEffect(() => {
+        let filteredTodos = []
         if ((filter == VIEW_ALL_FILTER_VALUE)) {
-            setFilteredTodos(todos)
+            filteredTodos = todos
         } else {
-            setFilteredTodos(todos.filter((item) => item.categories.includes(filter)))
+            filteredTodos = todos.filter((item) => item.categories.includes(filter))
         }
-    }, [filter])
+
+        if (hideDone) {
+            filteredTodos = filteredTodos.filter((item) => !item.isDone)
+        }
+
+        setFilteredTodos(filteredTodos)
+
+    }, [filter, hideDone])
 
     return (
         <>
@@ -42,6 +51,14 @@ export default function TodoList() {
                     }
                 </ul>
             </nav>
+
+            <div className="px-4 my-2">
+                <div>
+                    <input type="checkbox" className="w-4 h-4 text-blue-400 bg-transparent border-2 border-gray-300 rounded focus:ring-blue-300 focus:ring-2" checked={hideDone} onChange={() => setHideDone(!hideDone)} />
+                    <label className="ml-1 text-sm">Hide Done</label>
+                </div>
+            </div>
+
             <div className="px-4 mt-4">
                 <ul>
                     {
