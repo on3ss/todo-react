@@ -15,7 +15,7 @@ export default function TodoForm() {
     const [categories, setCategories] = useState([])
 
     const handleSelectChange = (e) => {
-        const updatedOptions = [...e.target.options].filter(option => option.selected).map(x => x.value)
+        const updatedOptions = [...e.target.options].filter(option => option.selected).map(x => parseInt(x.value))
         setCategories(updatedOptions)
     }
 
@@ -26,7 +26,7 @@ export default function TodoForm() {
     }
 
     return (
-        <form className="mt-4" onSubmit={handleSubmit}>
+        <form className="px-4 mt-4" onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="title" className="block mb-2 text-sm font-medium text-gray-900">Title</label>
                 <input type="text" id="title" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="John" value={title} onChange={(e) => setTitle(e.target.value)} required />

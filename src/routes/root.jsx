@@ -9,7 +9,7 @@ export default function Root() {
                     <Link className="text-3xl focus:outline-none" to="/form">+</Link>
                 </div>
             </header>
-            <main className="px-4">
+            <main>
                 <Outlet />
             </main>
         </div>
