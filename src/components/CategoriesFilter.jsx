@@ -1,6 +1,6 @@
 import categories from '../data/todoCategory'
 
-export default function NavBar() {
+export default function CategoriesFilter() {
     return (
         <nav className="py-4 overflow-x-auto">
             <ul className="flex justify-start">

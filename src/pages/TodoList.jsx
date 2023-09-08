@@ -1,5 +1,5 @@
 import TodoCard from "../components/TodoCard"
-import CategoriesFilter from '../components/NavBar'
+import CategoriesFilter from '../components/CategoriesFilter'
 import { useSelector } from "react-redux"
 
 
