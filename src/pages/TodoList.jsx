@@ -64,7 +64,7 @@ export default function TodoList() {
                     {
                         filteredTodos && filteredTodos.length > 0
                             ? filteredTodos.map((todo, key) => {
-                                return (<TodoCard key={key} todo={todo} />)
+                                return (<TodoCard key={todo.id} todo={todo} />)
                             }) : (
                                 <div className="flex justify-center">
                                     <h5>No todos yet!</h5>
