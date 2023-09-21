@@ -13,7 +13,6 @@ export default function TodoList() {
 
 
     useEffect(() => {
-        console.log(filter)
         let filtered = []
         if ((filter == VIEW_ALL_FILTER_VALUE)) {
             filtered = todos
