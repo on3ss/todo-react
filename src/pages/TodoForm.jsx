@@ -1,4 +1,3 @@
-import { useState } from "react";
 import defaultCategories from "../data/todoCategory";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../store/slice/todoSlice";
@@ -24,7 +23,7 @@ export default function TodoForm() {
 
     const onSubmit = (data) => {
         console.log(data)
-        // dispatch(addTodo({ title, description, categories, isDone: false }))
+        // dispatch(addTodo({ ...data, isDone: false }))
         // return navigate('/')
     }
 
