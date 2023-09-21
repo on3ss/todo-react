@@ -22,9 +22,8 @@ export default function TodoForm() {
 
 
     const onSubmit = (data) => {
-        console.log(data)
-        // dispatch(addTodo({ ...data, isDone: false }))
-        // return navigate('/')
+        dispatch(addTodo({ ...data, isDone: false }))
+        return navigate('/')
     }
 
     return (

@@ -37,12 +37,12 @@ export default function TodoCard({ todo }) {
                 <div className="flex items-center justify-between">
                     <div className="flex justify-start gap-2 my-2">
                         {
-                            todo.categories.map((category, key) => {
+                            todo.categories.length > 0 ? todo.categories.map((category, key) => {
                                 const color = categories[parseInt(category)].color
                                 return (
                                     <div key={key} className={"w-6 h-6 rounded-full " + color}></div>
                                 )
-                            })
+                            }) : <div></div>
                         }
                     </div>
                     <div>

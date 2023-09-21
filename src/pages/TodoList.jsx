@@ -13,11 +13,12 @@ export default function TodoList() {
 
 
     useEffect(() => {
+        console.log(filter)
         let filtered = []
         if ((filter == VIEW_ALL_FILTER_VALUE)) {
             filtered = todos
         } else {
-            filtered = todos.filter((item) => item.categories.includes(filter))
+            filtered = todos.filter((item) => item.categories.includes(filter.toString()))
         }
 
         if (hideDone) {
@@ -64,7 +65,7 @@ export default function TodoList() {
                     <ul>
                         {
                             filteredTodos && filteredTodos.length > 0
-                                ? filteredTodos.map((todo, key) => {
+                                ? filteredTodos.map((todo) => {
                                     return (<TodoCard key={todo.id} todo={todo} />)
                                 }) : (
                                     <div className="flex justify-center">
